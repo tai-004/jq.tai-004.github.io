@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Flores</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script >
+      $(document).ready(function (){
+         $(" .img ").click(function (){
+            $(this).hide("slow");
+         });
+         $("#btmostrartodas").click( function(){
+            $(" .img").fadeIn(7000);
+         });
+      });
+
+   </script>
+   
+   <style>
+      .img{
+         width: 300px;
+         height: 200px;
+      }
+   </style>
+
+</head>
+<body>
+   
+
+   <br>
+   <br>
+   <br><center><h2>Flores</h2></center>
+   <br>
+   <br>
+   <center><img class="img" src="CasaFoto1.jpg">
+   <img class="img" src="CasaFoto2.jpg">
+   <img class="img" src="CasaFoto3.jpg">
+   <br>
+   <img class="img" src="CasaFoto4.jpg">
+   <img class="img" src="CasaFoto5.jpg">
+   <img class="img" src="CasaFoto6.jpg">
+</center>
+
+   <br><br><br>
+   <center><button id="btmostrartodas">Exibir imagens
+   </button></center>
+</body>
+</html>
